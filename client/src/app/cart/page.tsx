@@ -124,21 +124,21 @@ export default function CartPage() {
                     <button
                       onClick={() => handleQuantityChange(cartItem.item._id, cartItem.quantity - 1)}
                       disabled={loading}
-                      className="w-10 h-10 flex items-center justify-center bg-white rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors duration-200 disabled:opacity-50"
+                      className="w-10 h-10 flex items-center justify-center bg-white rounded-lg border border-gray-200 hover:cursor-pointer hover:bg-gray-50 transition-colors duration-200 disabled:opacity-50"
                     >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
                       </svg>
                     </button>
-                    <span className="w-12 text-center font-semibold text-lg">
+                    <span className="w-12 text-center text-gray-800 font-semibold text-lg">
                       {cartItem.quantity}
                     </span>
                     <button
                       onClick={() => handleQuantityChange(cartItem.item._id, cartItem.quantity + 1)}
                       disabled={loading}
-                      className="w-10 h-10 flex items-center justify-center bg-white rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors duration-200 disabled:opacity-50"
+                      className="w-10 h-10 flex items-center justify-center bg-white rounded-lg border border-gray-200 hover:cursor-pointer hover:bg-gray-50 transition-colors duration-200 disabled:opacity-50"
                     >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v12m6-6H6" />
                       </svg>
                     </button>
