@@ -125,7 +125,7 @@ export default function FilterBar({ filters, setFilters }: FilterBarProps) {
               type="number"
               value={filters.maxPrice}
               onChange={(e) => handleFilterChange('maxPrice', e.target.value)}
-              placeholder="1000"
+              placeholder="300000"
               min="0"
               className="w-full pl-8 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500"
             />
