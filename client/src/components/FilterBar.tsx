@@ -99,7 +99,7 @@ export default function FilterBar({ filters, setFilters }: FilterBarProps) {
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-              <span className="text-gray-500 text-sm">$</span>
+              <span className="text-gray-500 text-sm">₹</span>
             </div>
             <input
               type="number"
@@ -119,7 +119,7 @@ export default function FilterBar({ filters, setFilters }: FilterBarProps) {
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-              <span className="text-gray-500 text-sm">$</span>
+              <span className="text-gray-500 text-sm">₹</span>
             </div>
             <input
               type="number"

@@ -14,10 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/ecommerce', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Astrape-ai-ecommerce');
 
 // Routes
 app.use('/api/auth', authRoutes);

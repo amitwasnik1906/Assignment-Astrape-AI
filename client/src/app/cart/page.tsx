@@ -116,7 +116,7 @@ export default function CartPage() {
                       </span>
                     </p>
                     <p className="text-xl font-bold text-blue-600">
-                      ${cartItem.item.price.toFixed(2)}
+                      ₹{cartItem.item.price.toFixed(2)}
                     </p>
                   </div>
 
@@ -146,7 +146,7 @@ export default function CartPage() {
 
                   <div className="text-right">
                     <p className="text-xl font-bold text-gray-900 mb-2">
-                      ${(cartItem.item.price * cartItem.quantity).toFixed(2)}
+                      ₹{(cartItem.item.price * cartItem.quantity).toFixed(2)}
                     </p>
                     <button
                       onClick={() => handleRemoveItem(cartItem.item._id)}
@@ -166,13 +166,13 @@ export default function CartPage() {
         <div className="lg:col-span-1">
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 sticky top-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Order Summary</h2>
-            
+
             <div className="space-y-4 mb-6">
               <div className="flex justify-between items-center py-2">
                 <span className="text-gray-600">
                   Items ({cart.items.reduce((total, item) => total + item.quantity, 0)})
                 </span>
-                <span className="font-semibold">${cart.totalAmount.toFixed(2)}</span>
+                <span className="font-semibold">₹{cart.totalAmount.toFixed(2)}</span>
               </div>
               <div className="flex justify-between items-center py-2">
                 <span className="text-gray-600">Shipping</span>
@@ -185,7 +185,7 @@ export default function CartPage() {
               <hr className="my-4" />
               <div className="flex justify-between items-center py-2">
                 <span className="text-xl font-bold">Total</span>
-                <span className="text-2xl font-bold text-blue-600">${cart.totalAmount.toFixed(2)}</span>
+                <span className="text-2xl font-bold text-blue-600">₹{cart.totalAmount.toFixed(2)}</span>
               </div>
             </div>
 
