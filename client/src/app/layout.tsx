@@ -53,7 +53,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     <div className="flex justify-center space-x-6 text-sm text-gray-500">
                       <span>© 2024 E-Commerce App</span>
                       <span>•</span>
-                      <span>Made with ❤️</span>
+                      <span>Made by Amit Wasnik</span>
                     </div>
                   </div>
                 </div>
